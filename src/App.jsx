@@ -4,6 +4,7 @@ import USA from './USA'
 import Islamabad from './Islamabad'
 import Australia from './Australia'
 import Canada from './Canada'
+import './button.css'
 
 function Home() {
   const navigate = useNavigate();
@@ -14,10 +15,10 @@ function Home() {
         CLICK ON THE BUTTON TO SEE THE CITY'S CURRENT TIME
       </h1>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '70px' }}>
-        <button onClick={() => navigate('/islamabad')}>Islamabad</button>
-        <button onClick={() => navigate('/australia')}>Australia</button>
-        <button onClick={() => navigate('/usa')}>USA</button>
-        <button onClick={() => navigate('/canada')}>Canada</button>
+        <button className='button-56'  onClick={() => navigate('/islamabad')}>Pakistan</button>
+        <button className='button-56' onClick={() => navigate('/australia')}>Australia</button>
+        <button className='button-56' onClick={() => navigate('/usa')}>USA</button>
+        <button className='button-56' onClick={() => navigate('/canada')}>Canada</button>
       </div>
     </>
   );
@@ -38,3 +39,4 @@ function App() {
 }
 
 export default App;
+
